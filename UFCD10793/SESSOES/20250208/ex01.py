@@ -10,7 +10,7 @@ preço, e retorne o preço total considerando os descontos seguintes:
 Utilize a estrutura match...case para determinar o desconto a ser aplicado
 '''
 
-'''Lista de produtos'''
+# Lista de produtos
 produtos = {'smartphone': 0.10, 'tablet': 0.15, 'laptop': 0.20}
 
 produto = input('Digite o nome do produto: ').lower()
