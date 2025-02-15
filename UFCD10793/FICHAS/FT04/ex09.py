@@ -1,7 +1,8 @@
 '''
-Escreve um programa que coloque no ecrã a tabuada do número 5
-
+Reescreve o programa anterior de forma a apresentar
+a tabuada de qualquer número introduzido pelo utilizador
 '''
+
 import os
 os.system('cls' if os.name == 'nt' else 'clear')
 
