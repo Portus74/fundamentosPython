@@ -1,0 +1,22 @@
+import sqlite3
+
+# Criar ligação com a base de dados
+conexao = sqlite3.connect('auditoria.db')
+
+# Criar cursor para executar comandos SQL
+cursor = conexao.cursor()
+
+# Criar tabela para armazenar logs de auditoria
+cursor.execute('''
+               CREATE TABLE IF NOT EXISTS
+               auditoria(
+                   id INTEGER PRIMARY KEY AUTOINCREMENT,
+                   data_hora TEXT,
+                   evento TEXT,
+                   detalhes TEXT
+               )
+               ''')
+
+# Armazenar alterações
+conexao.commit()
+conexao.close()
