@@ -1,5 +1,7 @@
 
 import sqlite3
+# Localização e ficheiro empresa.db
+caminho_ficheiro = 'c:/FORMACAO/fundamentosPython/UFCD10793/AVALIACAO/INTERMEDIA/PARTE_3/empresa.db'
 
 criarTabela = True
 inserirDados = False
@@ -7,7 +9,9 @@ consultarDados = False
 
 if criarTabela:
     #Criar conexão com o banco de dados (ou criar se não existir)
-    conn = sqlite3.connect('empresa.db')
+    #conn = sqlite3.connect('empresa.db')
+    conn = sqlite3.connect(caminho_ficheiro)
+    
     #Criar cursor para executar comandos SQL
     cursor = conn.cursor()
 
@@ -28,7 +32,7 @@ if criarTabela:
 
 
 if inserirDados:
-    conn = sqlite3.connect('empresa.db')
+    conn = sqlite3.connect(caminho_ficheiro)
     cursor = conn.cursor()
 
     #Inserir funcionários na tabela
@@ -42,7 +46,7 @@ if inserirDados:
 
 
 if consultarDados:
-    conn = sqlite3.connect('empresa.db')
+    conn = sqlite3.connect(caminho_ficheiro)
     cursor = conn.cursor()
     # Consultar os funcionários da tabela
     cursor.execute("SELECT * FROM funcionarios")
