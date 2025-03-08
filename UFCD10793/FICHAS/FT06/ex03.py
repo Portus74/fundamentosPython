@@ -1,14 +1,30 @@
-# Definir a lista inicial de idades
+
+
+#%%
+
+ #Definir a lista inicial de idades
 idades = [25, 15, 19, 22, 37, 78, 46, 2, 67]
 
 # a. Indique quantas pessoas são menores de idade
-menores_de_idade = 0
+menor_de_idade = 0
 for idade in idades:
     if idade < 18:
-        menores_de_idade += 1
+        menor_de_idade += 1
 
 print("a. Número de pessoas menores de idade:")
-print(menores_de_idade)
+print(menor_de_idade)
+
+# Método alternativo
+# Comprehension 
+# sintaxe: [expressão for variável in lista]
+
+menor_de_idade = len([idade for idade in idades if idade < 18])
+print("a. Número de pessoas menores de idade:")
+print(menor_de_idade)
+
+
+#%%
+
 
 # b. Ordene a lista por ordem decrescente
 idades_ordenadas = sorted(idades, reverse=True)

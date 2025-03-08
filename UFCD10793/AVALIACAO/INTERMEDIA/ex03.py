@@ -1,13 +1,13 @@
 '''
 Exemplos parra cada exceção
 
-i. Exemplo   de ValueError
+i. Exemplo   de ValueErrornt
 '''
 # i. Exemplo de ValueError
 try:
     idade = int(input("Digite sua idade: "))
 except ValueError:
-    pritn("Erro: Dgiite um inteiro válido.")
+    print("Erro: Dgiite um inteiro válido.")
     
 # i. Exemplo de ZeroDivisionError:
 try:
