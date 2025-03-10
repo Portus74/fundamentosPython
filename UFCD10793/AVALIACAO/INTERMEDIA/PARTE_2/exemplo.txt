@@ -1,12 +1,1 @@
-Título: A Importância da Tecnologia
-
-A tecnologia tem evoluído rapidamente ao longo dos anos, trazendo inúmeros benefícios para a sociedade. 
-Desde a revolução industrial até a era digital, as inovações facilitaram a comunicação, otimizaram processos 
-e transformaram a forma como trabalhamos e vivemos.
-
-No entanto, é essencial utilizar a tecnologia de forma consciente, garantindo a segurança da informação 
-e a privacidade dos utilizadores. O futuro promete avanços ainda mais impressionantes, tornando-se fundamental 
-adaptarmo-nos às novas realidades.
-
-- Autor: João Silva
-- Data: 07/03/2025
+Esta � a nova primeira linha.Segunda linha do ficheiro.
